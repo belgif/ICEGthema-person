@@ -1,0 +1,162 @@
+[
+    // View on the current state of the person.
+    {
+        "person": {
+            "identifier": "90110800000",
+            "firstName": {
+                "currentValue": "Tom",
+                "lastModified": "2021-01-01 10:00:00"
+            },
+            "citizenship": {
+                "currentValue": [
+                    {
+                        "isoCode": "BEL",
+                        "nisCode": "150"
+                    }
+                ],
+                "lastModified": "2020-01-01 10:00:00"
+            },
+            "residence": {
+                "address": {
+                    "currentValue": {
+                        "bestIdentifier": {
+                            "id": "https://data.vlaanderen.be/id/adres/3706808",
+                            "namespace": "https://data.vlaanderen.be/id/adres",
+                            "objectId": "3706808",
+                            "versionId": "2023-11-01T15:46:20+01:00"
+                        }
+                    },
+                    "lastModified": "2020-01-01 10:00:00"
+                }
+            }
+        }
+    },
+    // Detailed view of each property over time.
+    [
+        {
+            "person": {
+                "identifier": "90110800000"
+            },
+            // There are different options to refer to a property: URIs, combination of type name and property name,... The designation of the property should point to a single datapoint in the underlying model.
+            "property": {
+                "typeName": "Person",
+                "propertyName": "firstName"
+            },
+            "history": [
+                {
+                    "value": "Tom",
+                    "effectiveFrom": "2021-01-01 10:00:00",
+                    "created": "2021-01-01 10:00:00"
+                },
+                {
+                    "value": "John",
+                    "effectiveFrom": "2020-01-01 10:00:00",
+                    "created": "2020-01-01 10:00:00"
+                }
+            ]
+        },
+        {
+            "person": {
+                "identifier": "90110800000"
+            },
+            "property": {
+                "typeName": "Person",
+                "propertyName": "citizenship"
+            },
+            "history": [
+                {
+                    "value": [
+                        {
+                            "isoCode": "BEL",
+                            "nisCode": "150"
+                        }
+                    ],
+                    "effectiveFrom": "2020-01-01 10:00:00",
+                    "created": "2020-01-01 10:00:00"
+                }
+            ]
+        },
+        {
+            "person": {
+                "identifier": "90110800000"
+            },
+            "property": {
+                "typeName": "Residency",
+                "propertyName": "residence"
+            },
+            "history": [
+                {
+                    "value": [
+                        {
+                            "address": {
+                                "bestIdentifier": {
+                                    "id": "https://data.vlaanderen.be/id/adres/3706808",
+                                    "namespace": "https://data.vlaanderen.be/id/adres",
+                                    "objectId": "3706808",
+                                    "versionId": "2023-11-01T15:46:20+01:00"
+                                }
+                            }
+                        }
+                    ],
+                    "effectiveFrom": "2020-01-01 10:00:00",
+                    "created": "2020-01-01 10:00:00"
+                }
+            ]
+        }
+    ],
+    // The above views rely on a log of changes. See comment above regarding designation of property. The value of the statement can either be normalised or denormalised.
+    [
+        {
+            "statement": 1,
+            "identifier": "90110800000",
+            "typeName": "Person",
+            "propertyName": "firstName",
+            "value": "John",
+            "effectiveFrom": "2020-01-01 10:00:00",
+            "created": "2020-01-01 10:00:00"
+        },
+        {
+            "statement": 2,
+            "identifier": "90110800000",
+            "typeName": "Person",
+            "propertyName": "citizenship",
+            "value": [
+                {
+                    "isoCode": "BEL",
+                    "nisCode": "150"
+                }
+            ],
+            "effectiveFrom": "2020-01-01 10:00:00",
+            "created": "2020-01-01 10:00:00"
+        },
+        {
+            "statement": 3,
+            "identifier": "90110800000",
+            "typeName": "Residency",
+            "propertyName": "residence",
+            "value": [
+                {
+                    "address": {
+                        "bestIdentifier": {
+                            "id": "https://data.vlaanderen.be/id/adres/3706808",
+                            "namespace": "https://data.vlaanderen.be/id/adres",
+                            "objectId": "3706808",
+                            "versionId": "2023-11-01T15:46:20+01:00"
+                        }
+                    }
+                }
+            ],
+            "effectiveFrom": "2020-01-01 10:00:00",
+            "created": "2020-01-01 10:00:00"
+        },
+        {
+            "statement": 4,
+            "identifier": "90110800000",
+            "typeName": "Person",
+            "propertyName": "firstName",
+            "value": "Tom",
+            "effectiveFrom": "2021-01-01 10:00:00",
+            "created": "2021-01-01 10:00:00"
+        }
+    ]
+]
