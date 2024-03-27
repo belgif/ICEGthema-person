@@ -1,48 +1,48 @@
 {
-    "person": {
-        "identifier": "90110800000"
-    },
-    "property": {
-        "typeName": "Residency",
-        "propertyName": "residence"
-    },
-    "history": [
-        {
-            "value": {
-                "address": {
-                    "addressComponent": [
-                        {
-                            "componentType": "Street",
-                            "componentValue": "405"
-                        },
-                        {
-                            "componentType": "Street",
-                            "componentValue": "East 42nd Street"
-                        },
-                        {
-                            "componentType": "City",
-                            "componentValue": "New York"
-                        },
-                        {
-                            "componentType": "State",
-                            "componentValue": "NY"
-                        },
-                        {
-                            "componentType": "Postal Code",
-                            "componentValue": "10017"
-                        },
-                        {
-                            "componentType": "Country",
-                            "componentValue": {
-                                "isoCode": "USA",
-                                "nisCode": "402"
-                            }
-                        }
-                    ]
-                }
-            }
-        }
-    ],
-    "effectiveFrom": "2000-01-01 10:00:00",
-    "created": "2001-01-01 10:00:00"
+	"person": {
+		"identifier": "90110800000"
+	},
+	"property": {
+		"typeName": "Residency",
+		"propertyName": "residence"
+	},
+	"history": [
+		{
+			"value": {
+				"address": {
+					"addressComponent": [
+						{
+							"componentType": "Street",
+							"componentValue": "405"
+						},
+						{
+							"componentType": "Street",
+							"componentValue": "East 42nd Street"
+						},
+						{
+							"componentType": "City",
+							"componentValue": "New York"
+						},
+						{
+							"componentType": "State",
+							"componentValue": "NY"
+						},
+						{
+							"componentType": "Postal Code",
+							"componentValue": "10017"
+						},
+						{
+							"componentType": "Country",
+							"componentValue": {
+								"isoCode": "USA",
+								"nisCode": "402"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"effectiveFrom": "2000-01-01 10:00:00",
+	"created": "2001-01-01 10:00:00"
 }
