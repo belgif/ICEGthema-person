@@ -3,3 +3,4 @@
 *.xlsm
 persoon*.j2
 ~*
+resources/examples/identifier/adms.jsonld
