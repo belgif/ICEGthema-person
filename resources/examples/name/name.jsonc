@@ -1,0 +1,52 @@
+[
+  // Distinct attributes to capture name types.
+  {
+    "alternativeName": "Hergé",
+    "birthName": "Georges Prosper Remi",
+    "familyName": [
+      "Remi"
+    ],
+    "fullName": "Georges Prosper Remi",
+    "givenName": [
+      "Georges",
+      "Prosper"
+    ],
+    "preferredGivenName": "Georges"
+  },
+  // Flexible Name object to capture different name types.
+  [
+    {
+      "nameType": "AlternativeName",
+      "nameValue": "Hergé",
+      "language": "fr"
+    },
+    {
+      "nameType": "BirthName",
+      "nameValue": "Georges Prosper Remi",
+      "language": "fr"
+    },
+    {
+      "nameType": "FamilyName",
+      "nameValue": "Remi",
+      "language": "fr"
+    },
+    {
+      "nameType": "FullName",
+      "nameValue": "Georges Prosper Remi",
+      "language": "fr"
+    },
+    {
+      "nameType": "GivenName",
+      "nameValue": [
+        "Georges",
+        "Prosper"
+      ],
+      "language": "fr"
+    },
+    {
+      "nameType": "PreferredGivenName",
+      "nameValue": "Georges",
+      "language": "fr"
+    }
+  ]
+]
