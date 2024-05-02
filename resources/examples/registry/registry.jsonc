@@ -135,8 +135,6 @@
     },
     "legalEvent": [
       {
-        "type": "LegalRequest",
-        "legalEventType": "CitizenshipApplication",
         "occurenceDate": "2019-01-01 10:00:00",
         "value": [
           {
@@ -151,8 +149,6 @@
         ]
       },
       {
-        "type": "LegalOutcome",
-        "legalEventType": "CitizenshipDeclaration",
         "occurenceDate": "2020-01-01 10:00:00",
         "value": [
           {
@@ -167,8 +163,6 @@
         ]
       },
       {
-        "type": "LegalOutcome",
-        "legalEventType": "CitizenshipCancellationDeclaration",
         "occurenceDate": "2023-01-01 10:00:00",
         "legalResource": [
           {
