@@ -1,11 +1,11 @@
+/* 
+  The sequence used in this example:
+    - 2019-01-01 10:00:00: The citizen applies for Belgian citizenship.
+    - 2020-01-01 10:00:00: The following values are recorded for the citizen (first name: John, Fitzgeral; the Belgian citizenship is granted; an address in Flanders is recorded as main residence)
+    - 2022-01-01 10:00:00: The second first name of the citizen is updated from Fitzgerald to Cornelius.
+    - 2023-01-01 10:00:00: The Belgian citizenship of the citizen is withdrawn. 
+*/
 [
-  /* 
-    The sequence used in this example:
-      - 2019-01-01 10:00:00: The citizen applies for Belgian citizenship.
-      - 2020-01-01 10:00:00: The following values are recorded for the citizen (first name: John, Fitzgeral; the Belgian citizenship is granted; an address in Flanders is recorded as main residence)
-      - 2022-01-01 10:00:00: The second first name of the citizen is updated from Fitzgerald to Cornelius.
-      - 2023-01-01 10:00:00: The Belgian citizenship of the citizen is cancelled. 
-  */
   // View on the current state of the person.
   {
     "record": {
@@ -81,12 +81,10 @@
       },
       "history": [
         {
-          "value": [
-            {
-              "isoCode": "BEL",
-              "nisCode": "150"
-            }
-          ],
+          "value": {
+            "isoCode": "BEL",
+            "nisCode": "150"
+          },
           "effectiveFrom": "2020-01-01 10:00:00",
           "effectiveUntil": "2023-01-01 10:00:00",
           "created": "2020-01-01 10:00:00",
@@ -104,19 +102,17 @@
       },
       "history": [
         {
-          "value": [
-            {
-              "address": {
-                "bestIdentifier": {
-                  "id": "https://data.vlaanderen.be/id/adres/3706808",
-                  "namespace": "https://data.vlaanderen.be/id/adres",
-                  "objectId": "3706808",
-                  "versionId": "2023-11-01T15:46:20+01:00"
-                }
-              },
-              "residenceType": "MainResidence"
-            }
-          ],
+          "value": {
+            "address": {
+              "bestIdentifier": {
+                "id": "https://data.vlaanderen.be/id/adres/3706808",
+                "namespace": "https://data.vlaanderen.be/id/adres",
+                "objectId": "3706808",
+                "versionId": "2023-11-01T15:46:20+01:00"
+              }
+            },
+            "residenceType": "MainResidence"
+          },
           "effectiveFrom": "2020-01-01 10:00:00",
           "created": "2020-01-01 10:00:00",
           "lastModified": "2020-01-01 10:00:00"
@@ -137,12 +133,10 @@
       {
         "type": "CitizenshipApplication",
         "occurenceDate": "2019-01-01 10:00:00",
-        "value": [
-          {
-            "isoCode": "BEL",
-            "nisCode": "150"
-          }
-        ],
+        "value": {
+          "isoCode": "BEL",
+          "nisCode": "150"
+        },
         "legalResource": [
           {
             "date": "2019-01-01 10:00:00"
@@ -152,12 +146,10 @@
       {
         "type": "CitizenshipAcquisition",
         "occurenceDate": "2020-01-01 10:00:00",
-        "value": [
-          {
-            "isoCode": "BEL",
-            "nisCode": "150"
-          }
-        ],
+        "value": {
+          "isoCode": "BEL",
+          "nisCode": "150"
+        },
         "legalResource": [
           {
             "date": "2020-01-01 10:00:00"
@@ -165,7 +157,7 @@
         ]
       },
       {
-        "type": "CitizenshipCancellation",
+        "type": "CitizenshipWithdrawal",
         "occurenceDate": "2023-01-01 10:00:00",
         "legalResource": [
           {

@@ -1,0 +1,91 @@
+/* 
+  The sequence used in this example:
+    - 2020-01-01 10:00:00: MarriageCompletion (huwelijksvoltrekking) between Homer and Marge
+    - 2021-01-01 10:00:00: Birth of Lisa
+*/
+[
+  // PersonRelation
+  {
+    "firstName": "Homer",
+    "lastName": "Simpson",
+    "personRelation": [
+      {
+        "type": "Marriage",
+        "role": {
+          "roleType": "Wife",
+          "person": {
+            "firstName": "Marge",
+            "lastName": "Bouvier"
+          }
+        }
+      },
+      {
+        "type": "Descent",
+        "descentType": "Paternity",
+        "role": {
+          "roleType": "Daughter",
+          "person": {
+            "firstName": "Lisa",
+            "lastName": "Simpson"
+          }
+        }
+      }
+    ]
+  },
+  // Marriage detail
+  {
+    "record": {
+      "identifier": "90110800000"
+    },
+    "property": {
+      "typeName": "Marriage"
+    },
+    "value": {
+      "type": "Marriage",
+      "role": {
+        "roleType": "Wife",
+        "person": {
+          "firstName": "Marge",
+          "lastName": "Bouvier"
+        }
+      }
+    },
+    "effectiveFrom": "2020-01-01 10:00:00",
+    "legalEvent": {
+      "type": "MarriageCompletion",
+      "occurenceDate": "2020-01-01 10:00:00",
+      "legalResource": {
+        "type": "MarriageCertificate"
+      }
+    }
+  },
+  // Household
+  {
+    "householdAddress": {
+      "...": "..."
+    },
+    "roles": [
+      {
+        "roleType": "ReferencePerson", // Referentiepersoon
+        "person": {
+          "firstName": "Homer",
+          "lastName": "Simpson"
+        }
+      },
+      {
+        "roleType": "Wife",
+        "person": {
+          "firstName": "Marge",
+          "lastName": "Bouvier"
+        }
+      },
+      {
+        "roleType": "Daughter",
+        "person": {
+          "firstName": "Lisa",
+          "lastName": "Simpson"
+        }
+      }
+    ]
+  }
+]

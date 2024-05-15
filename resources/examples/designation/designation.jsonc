@@ -16,36 +16,36 @@
   // Flexible Name object to capture different name types.
   [
     {
-      "nameType": "AlternativeName",
-      "nameValue": "Hergé",
+      "designationType": "AlternativeName",
+      "designationValue": "Hergé",
       "language": "fr"
     },
     {
-      "nameType": "BirthName",
-      "nameValue": "Georges Prosper Remi",
+      "designationType": "BirthName",
+      "designationValue": "Georges Prosper Remi",
       "language": "fr"
     },
     {
-      "nameType": "FamilyName",
-      "nameValue": "Remi",
+      "designationType": "FamilyName",
+      "designationValue": "Remi",
       "language": "fr"
     },
     {
-      "nameType": "FullName",
-      "nameValue": "Georges Prosper Remi",
+      "designationType": "FullName",
+      "designationValue": "Georges Prosper Remi",
       "language": "fr"
     },
     {
-      "nameType": "GivenName",
-      "nameValue": [
+      "designationType": "GivenName",
+      "designationValue": [
         "Georges",
         "Prosper"
       ],
       "language": "fr"
     },
     {
-      "nameType": "PreferredGivenName",
-      "nameValue": "Georges",
+      "designationType": "PreferredGivenName",
+      "designationValue": "Georges",
       "language": "fr"
     }
   ]
