@@ -4,10 +4,13 @@
     - 2021-01-01 10:00:00: Birth of Lisa
 */
 [
-  // PersonRelation
+  // PersonRelation - current state
   {
-    "firstName": "Homer",
-    "lastName": "Simpson",
+    "record": {
+      "identifier": "90110800000",
+      "firstName": "Homer",
+      "lastName": "Simpson"
+    },
     "personRelation": [
       {
         "type": "Marriage",
@@ -17,7 +20,8 @@
             "firstName": "Marge",
             "lastName": "Bouvier"
           }
-        }
+        },
+        "effectiveFrom": "2020-01-01 10:00:00"
       },
       {
         "type": "Descent",
@@ -28,7 +32,8 @@
             "firstName": "Lisa",
             "lastName": "Simpson"
           }
-        }
+        },
+        "effectiveFrom": "2021-01-01 10:00:00"
       }
     ]
   },
@@ -50,7 +55,6 @@
         }
       }
     },
-    "effectiveFrom": "2020-01-01 10:00:00",
     "legalEvent": {
       "type": "MarriageCompletion",
       "occurenceDate": "2020-01-01 10:00:00",
@@ -59,33 +63,38 @@
       }
     }
   },
-  // Household
+  // Household - current state
   {
-    "householdAddress": {
-      "...": "..."
+    "record": {
+      "identifier": "90110800000"
     },
-    "roles": [
-      {
-        "roleType": "ReferencePerson", // Referentiepersoon
-        "person": {
-          "firstName": "Homer",
-          "lastName": "Simpson"
-        }
+    "household": {
+      "householdAddress": {
+        "...": "..."
       },
-      {
-        "roleType": "Wife",
-        "person": {
-          "firstName": "Marge",
-          "lastName": "Bouvier"
+      "role": [
+        {
+          "roleType": "ReferencePerson", // Referentiepersoon
+          "person": {
+            "firstName": "Homer",
+            "lastName": "Simpson"
+          }
+        },
+        {
+          "roleType": "Wife",
+          "person": {
+            "firstName": "Marge",
+            "lastName": "Bouvier"
+          }
+        },
+        {
+          "roleType": "Daughter",
+          "person": {
+            "firstName": "Lisa",
+            "lastName": "Simpson"
+          }
         }
-      },
-      {
-        "roleType": "Daughter",
-        "person": {
-          "firstName": "Lisa",
-          "lastName": "Simpson"
-        }
-      }
-    ]
+      ]
+    }
   }
 ]
