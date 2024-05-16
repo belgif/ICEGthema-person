@@ -1,5 +1,6 @@
 Voornaam;Naam;Affiliatie;E-mail;Website;Role
-Geert;Thijs;Digitaal Vlaanderen;;;B
-Liesbet;D’Hondt;FOD BOSA;;;B
-Mathieu;Tulpinck;Digitaal Vlaanderen;;;B
-
+Geert;Thijs;Digitaal Vlaanderen;geert.thijs@vlaanderen.be;https://data.vlaanderen.be/;E
+Jonas;De Meulenaere;Crossroads Bank for Social Security;jonas.demeulenaere@ksz-bcss.fgov.be;https://www.ksz-bcss.fgov.be/;A
+Liesbet;D’Hondt;FOD BOSA;liesbet.dhondt@bosa.fgov.be;https://bosa.belgium.be/en;E
+Mathieu;Tulpinck;Digitaal Vlaanderen;mathieu.tulpinck@vlaanderen.be;https://data.vlaanderen.be/;E
+Vincent;Turine;Crossroads Bank for Social Security;vincent.turine@ksz-bcss.fgov.be;https://www.ksz-bcss.fgov.be/;A
