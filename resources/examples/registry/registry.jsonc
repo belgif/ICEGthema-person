@@ -8,9 +8,9 @@
 [
   // View on the current state of the person.
   {
-    "record": {
+    "person": {
       "identifier": "90110800000",
-      "firstName": [
+      "givenName": [
         {
           "value": "John",
           "effectiveFrom": "2020-01-01 10:00:00"
@@ -41,13 +41,13 @@
   // View on each property over time.
   [
     {
-      "record": {
+      "person": {
         "identifier": "90110800000"
       },
       // There are different options to refer to a property: URIs, combination of type name and property name,... The designation of the property should point to a single datapoint in the underlying model.
       "property": {
         "typeName": "Person",
-        "propertyName": "firstName"
+        "propertyName": "givenName"
       },
       "history": [
         {
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "record": {
+      "person": {
         "identifier": "90110800000"
       },
       "property": {
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "record": {
+      "person": {
         "identifier": "90110800000"
       },
       "property": {
@@ -122,7 +122,7 @@
   ],
   // Detailed view on legal events linked to a particular property
   {
-    "record": {
+    "person": {
       "identifier": "90110800000"
     },
     "property": {
